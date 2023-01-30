@@ -1,0 +1,161 @@
+.home-header {
+    text-align: center;
+    margin: 0 0 .25em;
+    /* background-color: rgba(243, 243, 243, 0.678); */
+}
+
+.temp-home-header {
+    margin: 0 auto;
+    width: 90%;
+    max-height: 100vh;
+    border-radius: 7px;
+}
+
+
+.image-carousel-container {
+    margin-top: 1em;
+}
+
+.about-me-header {
+    text-align: center;
+}
+
+.about-me {
+    margin: 0 auto 1em;
+    width: 80%;
+    max-height: 10em;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.about-me-photo-container {
+    display: none;
+}
+
+.about-me-photo-container.active {
+    display: block;
+    max-height: 40vh;
+    margin-bottom: 4em;
+}
+
+.about-me-photo>img {
+    border-radius: 7px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.arrow-container:hover {
+    cursor: pointer;
+}
+
+.arrow-dot-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em auto 1em;
+    max-width: 600px;
+}
+
+
+.testimony-header {
+    text-align: center;
+}
+
+.testimony {
+    margin: .5em auto;
+    width: 95%;
+}
+
+.testimony-author {
+    margin: .25em 1em 1em;
+}
+
+@media(min-width: 800px) {
+
+    .about-me-header {
+        font-size: 2em;
+    }
+
+    .about-me-photo-container.active {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 1em auto;
+    }
+
+    .about-me {
+        max-height: 144px;
+        overflow-y: auto;
+    }
+
+    .about-me-photo>img {
+        max-height: calc(40vh - 2vh);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-me-photo-container {
+        display: none;
+    }
+
+
+    .testimonials-container {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .testimony-header {
+        font-size: 2em;
+    }
+
+    .testimony-text {
+        width: 80%;
+        text-align: left;
+    }
+
+    .testimony-author {
+        margin: .25em 0 .5em;
+    }
+}
+
+@media(min-width: 1000px) {
+    .home-header {
+        font-size: 1.5em;
+    }
+}
+
+
+@media(min-width: 1140px) {
+    .about-me-photo-container.active {
+        display: grid;
+        justify-content: space-around;
+        height: 50vh;
+        max-height: 50vh;
+    }
+
+    .about-me-photo>img {
+        /* max-width: 70%; */
+        width: 70%;
+        max-height: 70vh;
+    }
+
+    .about-me {
+        overflow-y: auto;
+        width: 75%;
+        max-height: 200px;
+    }
+}
+
+/* Multi uses */
+.spacer {
+    width: 8em;
+    border-top: 2px solid black;
+    margin: 1em auto .5em;
+}
+
+.bold {
+    font-weight: 700;
+}

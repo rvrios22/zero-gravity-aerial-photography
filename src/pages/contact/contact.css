@@ -1,0 +1,103 @@
+.contact-message-container {
+    margin: .25em auto;
+    text-align: center;
+    width: 90%;
+}
+
+.form-container {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.contact-labels {
+    display: block;
+    font-size: 1.5em;
+}
+
+.contact-inputs {
+    width: 100%;
+    resize: none;
+}
+
+.contact-button {
+    display: block;
+    margin: 1em auto;
+}
+
+.contact-icons-container-mobile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-content-container {
+    height: 87vh;
+}
+
+/* GALAXY FOLD PHONE RESPONSIVE */
+@media(max-width: 280) {
+    .contact-icons-container-mobile {
+        margin-bottom: 1em;
+    }
+    
+}
+
+@media(min-width: 750px){
+    .contact-container {
+        margin: 2em auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    
+    .contact-inputs {
+        width: 80%;
+    }
+    
+    .contact-message-container > p {
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+        font-size: 1.25em;
+    }
+}
+
+@media(min-width: 980px){
+    .contact-icons-container-mobile{
+        display: none;
+    }
+    
+    .contact-message-container > p {
+        width: 85%;
+        text-align: left;
+    }
+    .contact-message-container {
+        max-width: 1130px;
+
+    }
+}
+
+@media(max-width: 980px){
+    .contact-icons-container {
+        display: none;
+    }
+}
+
+.contact-icons-row1{
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
+    margin: 2em auto;
+}
+.contact-icons-row2{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    justify-content: flex-start;
+    margin: 0 auto;
+
+}
+
+.contact-icon {
+    margin-right: 3.5em;
+}

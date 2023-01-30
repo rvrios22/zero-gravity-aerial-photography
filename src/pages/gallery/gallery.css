@@ -1,0 +1,129 @@
+.gallery-header {
+    text-align: center;
+}
+
+.gallery-header-container {
+    margin: .25em auto 0;
+}
+
+.gallery-spacer {
+    width: 8em;
+    border-top: 2px solid black;
+    margin: 0 auto .5em;
+}
+
+.gallery-image {
+    border-radius: 7px;
+    margin: .75em auto;
+    width: 95%;
+}
+
+.gallery-image:hover {
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-load-button {
+    width: 50%;
+    margin: 1em auto;
+    text-align: center;
+    background: none;
+    border: none;
+    background-color: red;
+    border-radius: 50px;
+    height: 2em;
+}
+
+.gallery-load-button:hover {
+    background-color: rgb(18, 136, 221);
+    cursor: pointer;
+    color: white;
+}
+
+@media (min-width: 700px) {
+    .gallery-images-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-image {
+        align-items: center;
+        box-shadow: 2px 2px 5px 1px gray;
+    }
+
+    .gallery-load-button {
+        width: 33%;
+        max-width: 413px;
+    }
+}
+
+.overlay-deactive {
+    display: none;
+}
+
+.gallery-large-image-container{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 10;
+}
+
+.close-icon-container {
+    position: absolute;
+    right: 0;
+    
+}
+
+.close-icon-container:hover {
+    cursor: pointer;
+}
+
+.large-image-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.large-image {
+    width: 100%;
+    max-height: 95%;
+    max-width: 60vw;
+    border-radius: 7px;
+    align-content: center;
+    padding-bottom: 2em;
+}
+
+/* .gallery-large-video-container{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+} */
+
+/* .gallery-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-video {
+    width: 80%;
+    max-width: 2000px;
+    height: auto;
+} */
+
+@media (min-width: 1100px) {
+    .gallery-images-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
