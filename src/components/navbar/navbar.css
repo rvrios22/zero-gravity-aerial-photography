@@ -45,6 +45,17 @@ a:hover {
         display: none;
     }
 
+    @keyframes lower {
+        from {height: 0vh;}
+        to {height: 33vh;}
+    }
+
+    @keyframes opacity {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+
     .mobile-nav-item-container {
         position: absolute;
         background-color: rgb(255, 255, 255, .9);
@@ -53,8 +64,10 @@ a:hover {
         align-items: center;
         margin: 0 auto;
         width: 100%;
-        height: 13vh;
+        height: 33vh;
         z-index: 5;
+        animation-name: lower;
+        animation-duration: .5s;
     }
 
     .mobile-nav-list {
@@ -64,12 +77,22 @@ a:hover {
 
     .mobile-nav-list-item {
         list-style: none;
+        margin: 1em;
+        animation-name: opacity;
+        animation-duration: 2s;
     }
 }
 
 @media(min-width: 600px) {
+    @keyframes fade {
+        from{opacity: 1;}
+        to{opacity: 0;}
+    }
+
     .mobile-nav-item-container {
         display: none;
+        animation-name: fade;
+        animation-duration: 1.5s;
     }
     .menu-icon {
         display: none;

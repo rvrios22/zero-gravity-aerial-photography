@@ -1,5 +1,41 @@
 export const IMAGES = [
     {
+        alt: 'The Empire Zenyara Private Resort in Thermal',
+        image: 'Empire_Zenyara',
+        height: 3648,
+        width: 5472
+    },
+    {
+        alt: 'The Empire Zenyara Private Resort in Thermal',
+        image: 'Empire_Zenyara01',
+        height: 3648,
+        width: 5472
+    },
+    {
+        alt: 'The Empire Zenyara Private Resort in Thermal',
+        image: 'Empire_Zenyara02',
+        height: 3648,
+        width: 5472
+    },
+    {
+        alt: 'The Empire Zenyara Private Resort in Thermal',
+        image: 'Empire_Zenyara03',
+        height: 3648,
+        width: 5472
+    },
+    {
+        alt: 'The Empire Zenyara Private Resort in Thermal',
+        image: 'Empire_Zenyara04',
+        height: 3648,
+        width: 5472
+    },
+    {
+        alt: 'The Empire Zenyara Private Resort in Thermal',
+        image: 'Empire_Zenyara05',
+        height: 3648,
+        width: 5472
+    },
+    {
         alt: 'The Acrisure Areana in Palm Desery',
         image: 'AcrisureArena',
         height: 3648,

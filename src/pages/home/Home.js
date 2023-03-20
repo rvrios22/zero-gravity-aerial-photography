@@ -16,7 +16,7 @@ function Home() {
           <source src='./videos/landingVideo1.m4v' type='video/mp4' />
           Your browswer does not support the video
         </video> */}
-        <img src='./galleryPhotos/Arizona.jpg' alt='Arizona Sunset' className='temp-home-header'/>
+        <img src='./lowRes/Empire_Zenyara02.jpg' alt='Arizona Sunset' className='temp-home-header'/>
       </div>
       <main>
         <ImageCarousel />

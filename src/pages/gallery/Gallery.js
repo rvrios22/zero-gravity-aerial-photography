@@ -18,8 +18,9 @@ function Gallery() {
   const vidLength = videoThumbNails.length;
   const slicedImgArr = imgArr.slice(0, imgArrLength)
 
+
   const handleLoadMore = () => {
-    if (slicedImgArr.length == 18) {
+    if (slicedImgArr.length == 27) {
       setLoadButton(false)
     }
     setImgArrLength(imgArrLength + 3)
